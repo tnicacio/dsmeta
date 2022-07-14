@@ -1,8 +1,10 @@
-import { useState } from "react";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import NotificationButton from "../NotificationButton";
-import "./styles.css";
+import './styles.css';
+import 'react-datepicker/dist/react-datepicker.css';
+
+import { useState } from 'react';
+import DatePicker from 'react-datepicker';
+
+import NotificationButton from '../NotificationButton';
 
 function SalesCard() {
 

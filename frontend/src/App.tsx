@@ -1,17 +1,11 @@
-import Header from "./components/Header";
-import SalesCard from "./components/SalesCard";
+import Header from './components/Header';
+import MainContainer from './components/MainContainer';
 
 function App() {
   return (
     <>
       <Header />
-      <main>
-        <section id="sales">
-          <div className="dsmeta-container">
-            <SalesCard />
-          </div>
-        </section>
-      </main>
+      <MainContainer />
     </>
   );
 }
