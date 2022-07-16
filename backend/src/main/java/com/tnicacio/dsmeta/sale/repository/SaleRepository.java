@@ -7,10 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
-import java.util.UUID;
 
 @Repository
-public interface SaleRepository extends JpaRepository<SaleEntity, UUID> {
+public interface SaleRepository extends JpaRepository<SaleEntity, Long> {
 
     //    @Query("SELECT sale FROM SaleEntity sale WHERE sale.date BETWEEN :minDate AND :maxDate ORDER BY sale.amount
     //    DESC")
