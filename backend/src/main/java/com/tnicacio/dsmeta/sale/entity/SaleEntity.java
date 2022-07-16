@@ -1,4 +1,4 @@
-package com.tnicacio.dsmeta.config.sale.entity;
+package com.tnicacio.dsmeta.sale.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.LocalDate;
 import java.util.Objects;
-import java.util.UUID;
 
 @Getter
 @Setter
@@ -21,8 +20,8 @@ import java.util.UUID;
 public class SaleEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String sellerName;
 
