@@ -13,3 +13,13 @@
 .dsmeta-red-btn img {
   width: 19px;
 }
+
+.toast-success {
+  background-color: #bcf7bd;
+  color: rgb(25, 25, 25);
+}
+
+.toast-error {
+  background-color: #f7c3bd;
+  color: rgb(25, 25, 25);
+}
