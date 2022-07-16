@@ -4,9 +4,11 @@ import com.tnicacio.dsmeta.sale.repository.SaleRepository;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+@Log4j2
 @Service
 public class SmsService {
 
@@ -42,7 +44,7 @@ public class SmsService {
 
                     Message message = Message.creator(to, from, messageBody).create();
 
-                    System.out.println(message.getSid());
+                    log.info("Message sent {}", message.getSid());
                 });
     }
 }
